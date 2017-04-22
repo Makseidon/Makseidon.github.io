@@ -69,3 +69,14 @@
 <p id="pF"> (texte ecrit par Francois) </p>
 </body>
 </html>
+
+<script>
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    xhr.open('POST', 'https://api-3c30fde7baf070f909c5025dbcb64e23.oasis.sandstorm.io/t', true);
+    xhr.setRequestHeader('Authorization',
+                         'Bearer LfUJEkS7Pq2bngLCj1wvJTue2TU2GgJQli1hd6KkXt_');
+    xhr.setRequestHeader('X-Sandstorm-Passthrough', 'address');
+    xhr.send(null);
+  }
+</script>
